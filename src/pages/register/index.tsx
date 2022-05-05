@@ -3,14 +3,14 @@ import * as React from 'react';
 import Layout from '@/components/layout/Layout';
 import Seo from '@/components/Seo';
 
-export default function HomePage() {
+export default function RegisterPage() {
   return (
     <Layout>
-      <Seo templateTitle='Home' />
+      <Seo templateTitle='Register' />
 
       <main>
         <section className='bg-white'>
-          <h1 className='text-xl text-teal-500'>TJOB</h1>
+          <h1 className='text-xl text-teal-500'>Register</h1>
         </section>
       </main>
     </Layout>

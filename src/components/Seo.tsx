@@ -9,7 +9,7 @@ const defaultMeta = {
   siteName: 'TJOB',
   description: 'TJOB trungtn , manage work tjob',
   /** Without additional '/' on the end, e.g. https://theodorusclarence.com */
-  url: 'https://tsnext-tw.thcl.dev',
+  url: 'https://tjob.vercel.app/',
   type: 'website',
   robots: 'follow, index',
   /** No need to be filled, will be populated with openGraph function */

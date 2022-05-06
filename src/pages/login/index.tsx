@@ -3,6 +3,7 @@ import Link from 'next/link';
 import * as React from 'react';
 import { FcGlobe, FcGoogle } from 'react-icons/fc';
 
+import Header from '@/components/layout/Header';
 import Layout from '@/components/layout/Layout';
 import Seo from '@/components/Seo';
 
@@ -12,8 +13,9 @@ export default function LoginPage() {
       <Seo templateTitle='Login' />
 
       <main>
-        <section className='login flex h-[100vh] items-center justify-center bg-white'>
-          <div className='h-[80%] w-[450px] rounded-lg border-[2px] p-6 shadow-lg lg:h-[650px] lg:w-[450px]'>
+        <Header />
+        <section className='login flex h-[90vh] items-center justify-center bg-white'>
+          <div className='h-[80%] w-[400px] rounded-lg border-[2px] p-6 shadow-lg lg:h-[650px] lg:w-[400px]'>
             <h1 className='w-full text-center'>
               <Link href='/'>TJob</Link>
             </h1>
@@ -58,7 +60,7 @@ export default function LoginPage() {
               <div className='mt-[30px]'></div>
               <div className='flex justify-center'>
                 <button className='w-[250px] rounded-lg bg-black py-4 text-xl font-medium text-white transition-all duration-500 ease-in-out hover:bg-gray-700'>
-                  Submit
+                  Đăng nhập
                 </button>
               </div>
             </Form>

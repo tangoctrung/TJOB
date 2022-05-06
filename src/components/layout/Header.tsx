@@ -15,13 +15,16 @@ const links = [
 export default function Header() {
   const router = useRouter();
   return (
-    <header className='sticky top-0 z-50 m-auto flex max-w-[1920px] justify-center border-b-[1.5px] bg-white'>
-      <div className=' flex h-14 w-[1500px] items-center justify-between'>
+    <header className='sticky top-0 z-10 m-auto flex max-w-[1920px] justify-center border-b-[1.5px] bg-white shadow-sm'>
+      <div className=' flex h-14 w-[1200px] items-center justify-between'>
         <div className='w-[30%] font-bold hover:text-gray-600'>
-          <UnstyledLink href='/' className='flex items-center'>
+          <div
+            className='flex cursor-pointer items-center'
+            onClick={() => router.push('/')}
+          >
             <Image src='/favicon/logo.png' alt='' height={50} width={50} />
             <span className='ml-2 text-3xl'>TJob</span>
-          </UnstyledLink>
+          </div>
         </div>
         <nav className='w-[40%]'>
           <ul className='flex items-center justify-around font-semibold'>
@@ -37,7 +40,7 @@ export default function Header() {
 
         <div className='mr-4 flex w-[30%] justify-end text-lg'>
           <div
-            className='flex cursor-pointer items-center rounded-lg bg-slate-100 px-4 py-2 transition-all duration-300 ease-linear hover:bg-slate-200'
+            className='flex cursor-pointer items-center rounded-lg bg-slate-50 px-4 py-2 transition-all duration-300 ease-linear hover:bg-slate-200'
             onClick={() => router.push('/login')}
           >
             <MdLogin />
@@ -45,7 +48,7 @@ export default function Header() {
           </div>
           <div className='w-6'></div>
           <div
-            className='flex cursor-pointer items-center rounded-lg bg-slate-100 px-6 py-2 transition-all duration-300 ease-linear hover:bg-slate-200'
+            className='flex cursor-pointer items-center rounded-lg bg-slate-50 px-6 py-2 transition-all duration-300 ease-linear hover:bg-slate-200'
             onClick={() => router.push('/register')}
           >
             <MdOutlinePersonAddAlt />

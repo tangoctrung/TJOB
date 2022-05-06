@@ -27,6 +27,8 @@
   --color-primary-700: rgb(var(--tw-color-primary-700)); /* #0369a1 */
   --color-primary-800: rgb(var(--tw-color-primary-800)); /* #075985 */
   --color-primary-900: rgb(var(--tw-color-primary-900)); /* #0c4a6e */
+
+  scroll-behavior: smooth;
   /* #endregion  /**======== Primary Color =========== */
 }
 
@@ -129,4 +131,16 @@
 .login .ant-input-affix-wrapper {
   padding: 0px 8px 0px 8px !important;
   border-radius: 6px !important;
+}
+
+.homepage .ant-input-affix-wrapper {
+  border: 1.5px solid rgb(197, 194, 194);
+}
+
+.homepage .ant-input {
+  border: 1.5px solid rgb(202, 199, 199);
+}
+
+.homepage-itemCard {
+  width: 350px !important;
 }
